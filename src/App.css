@@ -13,26 +13,49 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.cst_pad {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+.abc::-webkit-scrollbar {
+  display: none;
+}
+.employeManagment {
+  display: flex;
+  max-width: 550px;
+  margin: auto;
+}
+
+.employess {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10%;
+  margin: 0 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .employess {
+    /* text-align: center; */
+    display: grid;
+    margin: 0 100px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .employess {
+    /* text-align: center; */
+    display: grid;
+    margin: 0 50px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
