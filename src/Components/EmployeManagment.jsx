@@ -69,9 +69,6 @@ const EmployeManagment = () => {
     getData();
   }, [open, flag, open3]);
 
-  //   const [flag, setFlag] = useState(false);
-  //   useEffect(() => {}, [flag]);
-
   return (
     <div className="employess">
       <AddEmployees
@@ -79,7 +76,6 @@ const EmployeManagment = () => {
         setOpen1={setOpen1}
         handleClickOpen1={handleClickOpen1}
         handleClose1={handleClose1}
-        // flag={flag}
         setflag={setflag}
         setemps={setemps}
         emps={emps}

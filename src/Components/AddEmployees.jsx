@@ -33,14 +33,6 @@ const AddEmployees = ({
   const [name, setName] = useState("");
   const [phone, setPhone] = useState(null);
   const [email, setEmail] = useState("");
-  //   const [open1, setOpen1] = useState(false);
-
-  //   const handleClickOpen1 = () => {
-  //     setOpen1(true);
-  //   };
-  //   const handleClose1 = () => {
-  //     setOpen1(false);
-  //   };
   const handelcheckbox = (e) => {
     const { value, checked } = e.target;
     if (checked) {
@@ -70,8 +62,6 @@ const AddEmployees = ({
         handleClose1();
       })
       .catch((err) => handleClose1());
-
-    // setflag();
   };
 
   return (

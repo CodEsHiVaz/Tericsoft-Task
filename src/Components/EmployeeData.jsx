@@ -61,73 +61,11 @@ const EmployeeData = ({
   sendForEdit,
   setSendForEdit,
 }) => {
-  //   const [sendForEdit, setSendForEdit] = useState({});
-  //   const [emps, setemps] = useState([]);
-  //   const [open2, setOpen2] = useState(false);
-  //   const [open3, setOpen3] = useState(false);
-  //   const [open, setOpen] = useState(false);
-  //   const [open1, setOpen1] = useState(false);
-
-  //   const handleClickOpen1 = () => {
-  //     setOpen1(true);
-  //   };
-  //   const handleClose1 = () => {
-  //     setOpen1(false);
-  //   };
-  //   const handleClickOpen = () => {
-  //     setOpen(true);
-  //   };
-  //   const handleClose = () => {
-  //     setOpen(false);
-  //   };
-  //   const handleClickOpen2 = () => {
-  //     setOpen2(true);
-  //   };
-  //   const handleClose2 = () => {
-  //     setOpen2(false);
-  //   };
-  //   const handleClickOpen3 = () => {
-  //     setOpen3(true);
-  //   };
-  //   const handleClose3 = (id) => {
-  //     setOpen3(false);
-  //   };
-  //   const getData = async () => {
-  //     try {
-  //       handleClickOpen1();
-  //       const response = await axios.get(
-  //         "https://backend-99b9.onrender.com/employes"
-  //       );
-  //       setemps(response.data);
-  //       handleClose1();
-  //     } catch (error) {
-  //       handleClose1();
-  //       console.error(error);
-  //     }
-  //   };
-  //   const handelDelete = (id) => {
-  //     console.log("handelDelete  id", id);
-  //     handleClickOpen1();
-  //     axios
-  //       .delete(`https://backend-99b9.onrender.com/employes/${id}`)
-  //       .then((res) => {
-  //         handleClose1();
-  //         handleClose3();
-  //       })
-  //       .catch((err) => {
-  //         console.log("error", err);
-  //         handleClose1();
-  //       });
-  //   };
-
-  //   useEffect(() => {
-  //     getData();
-  //   }, [open, open3]);
   return (
     <Grid container spacing={3} marginTop="20px">
       <Grid item xs={12} md={6}>
         <Typography variant="h4" gutterBottom>
-          Employes Registration form
+          Employes List
         </Typography>
       </Grid>
       <TableContainer
