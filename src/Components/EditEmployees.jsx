@@ -28,17 +28,14 @@ const EditEmployees = (props) => {
     e.preventDefault();
     props.handleClickOpen1();
     axios
-      .patch(
-        `https://backend-99b9.onrender.com/employes/${props.sendForEdit.id}`,
-        {
-          full_name: name,
-          phone: phone,
-          email: email,
-          gender: gender,
-          date_of_birth: dob,
-          hobbies: hobbies.length ? hobbies : hbl,
-        }
-      )
+      .patch(`${process.env.REACT_APP_API_URL}/${props.sendForEdit.id}`, {
+        full_name: name,
+        phone: phone,
+        email: email,
+        gender: gender,
+        date_of_birth: dob,
+        hobbies: hobbies.length ? hobbies : hbl,
+      })
       .then((res) => {
         console.log(res);
         props.handleClose1();

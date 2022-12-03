@@ -40,9 +40,7 @@ const EmployeManagment = () => {
   const getData = async () => {
     try {
       handleClickOpen1();
-      const response = await axios.get(
-        "https://backend-99b9.onrender.com/employes"
-      );
+      const response = await axios.get(process.env.REACT_APP_API_URL);
       setemps(response.data);
       handleClose1();
     } catch (error) {
@@ -54,7 +52,7 @@ const EmployeManagment = () => {
     console.log("handelDelete  id", id);
     handleClickOpen1();
     axios
-      .delete(`https://backend-99b9.onrender.com/employes/${id}`)
+      .delete(`${process.env.REACT_APP_API_URL}/${id}`)
       .then((res) => {
         handleClose1();
         handleClose3();

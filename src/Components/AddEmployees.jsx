@@ -47,14 +47,17 @@ const AddEmployees = ({
     e.preventDefault();
     handleClickOpen1();
     axios
-      .post("https://backend-99b9.onrender.com/employes", {
-        full_name: name,
-        phone: phone,
-        email: email,
-        gender: gender,
-        date_of_birth: dob,
-        hobbies: hobbies,
-      })
+      .post(
+        "https://fake-restful-api-production-aa88.up.railway.app/employes",
+        {
+          full_name: name,
+          phone: phone,
+          email: email,
+          gender: gender,
+          date_of_birth: dob,
+          hobbies: hobbies,
+        }
+      )
 
       .then((res) => {
         setemps([...emps, res.data]);
@@ -62,6 +65,8 @@ const AddEmployees = ({
         handleClose1();
       })
       .catch((err) => handleClose1());
+
+    e.setdefault();
   };
 
   return (
