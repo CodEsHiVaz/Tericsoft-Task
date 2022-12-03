@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Employee Management App - React
 
 
 
@@ -6,11 +6,15 @@
 
 ## for initial data loading it may took more time becouse free server has very low speed
 
-Live link :-  LIVE_LINK
+
+
+## Created on React with Material UI and this is <b>fully responsive </b>  site adaptable to every screen sizes
 
 
 ### Frontend part deplyed on Netlify
-### fake server using json-server diplyed on render
+### fake server using json-server diplyed on Render
+
+### Live link :-  <a href="https://reliable-capybara-d96c20.netlify.app/">LIVE_DEMO_LINK</a>
 
 
 ## Available Scripts
